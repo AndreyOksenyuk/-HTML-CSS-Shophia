@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/main.css">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <script src="https://use.fontawesome.com/02ea86597b.js"></script>
+   <!-- Slick -->
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <title>Shophia</title>
+</head>
+<body>
+
+<!-- Burger menu -->
+<nav class="mobile-menu">
+   <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+   <label for="checkbox" class="mobile-menu__btn">
+      <div class="mobile-menu__icon"></div>
+   </label>
+   <div class="mobile-menu__container">
+      <ul class="mobile-menu__list">
+         <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Home</a></li>
+         <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Gallery</a></li>
+         <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Categories</a></li>
+         <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Pages</a></li>
+      </ul>
+   </div>
+</nav>
+<!-- up button -->
+<button class="buttonUp" onclick="btnUp()">
+   <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</button>
+      <!-- Header -->
+   <header class="header">
+         <div class="header__bar">
+            <div class="container">
+               <div class="header__bar-inner">
+                  <div class="header__bar-phone">
+                     <i class="fa fa-phone" aria-hidden="true"></i>
+                     <a href="tel: 0000000000">  Call +001 555 801</a>
+                  </div>
+                  <div class="header__bar-link">
+                     <a href="#">WELCOME MSG!</a>
+                     <a href="#">MY ACCOUNT</a>
+                     <a href="#">MY WHISTLIST</a>
+                     <a href="#">LOGIN</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <div class="container">
+         <div class="header__nav">
+            <nav class="nav">
+               <ul>
+                  <li>Home</li>
+                  <li>Gallery</li>
+                  <li>Categories</li>
+                  <li>Pages</li>
+               </ul>
+            </nav>
+            <h1 class="header__title">Shophia</h1>
+            <div class="header__social">
+               <div class="header__social-nav">
+                  <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                  <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                  <a href="#" class="fa fa-pinterest" aria-hidden="true"></a>
+                  <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+               </div>
+               <div class="select-wrapper">
+                  <select class="header__select">
+                     <option value="USD">USD</option>
+                     <option value="UAH">UAH</option>
+                     <option value="Rupiah">Rupiah</option>
+                     <option value="EUR">EUR</option>
+                  </select>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </header>
+
+<!-- main-slider -->
+   <div class="slider-wrapper">
+      <div class="slider">
+         <div class="slider__slid">
+            <img src="img/main-slider/1.jpg" alt="clothes" class="slider__img">
+            <div class="slider__content">
+               <div class="slider__content-inner">
+                  <p>Mid-Season</p>
+                  <h3>Sale</h3>
+                  <div class="UpTo-line"><span>Up To</span></div>
+                  <h4>50% &nbsp; off</h4>
+               </div>
+            <a href="#" class="btn">Shop now</a>
+            </div>
+         </div>
+         <div class="slider__slid">
+            <img src="img/main-slider/1.jpg" alt="clothes" class="slider__img">
+            <div class="slider__content">
+               <div class="slider__content-inner">
+                  <p>Mid-Season</p>
+                  <h3>Sale</h3>
+                  <div class="UpTo-line"><span>Up To</span></div>
+                  <h4>35% &nbsp; off</h4>
+               </div>
+            <a href="#" class="btn">Shop now</a>
+            </div>
+         </div>
+         <div class="slider__slid">
+            <img src="img/main-slider/1.jpg" alt="clothes" class="slider__img">
+            <div class="slider__content">
+               <div class="slider__content-inner">
+                  <p>Mid-Season</p>
+                  <h3>Sale</h3>
+                  <div class="UpTo-line"><span>Up To</span></div>
+                  <h4>60% &nbsp; off</h4>
+               </div>
+            <a href="#" class="btn">Shop now</a>
+            </div>
+         </div>
+         <div class="slider__slid">
+            <img src="img/main-slider/1.jpg" alt="clothes" class="slider__img">
+            <div class="slider__content">
+               <div class="slider__content-inner">
+                  <p>Mid-Season</p>
+                  <h3>Sale</h3>
+                  <div class="UpTo-line"><span>Up To</span></div>
+                  <h4>70% &nbsp; off</h4>
+               </div>
+            <a href="#" class="btn">Shop now</a>
+            </div>
+         </div>  
+      </div>
+      <div class="slider-dots"></div>
+   </div>
+
+   <!-- Support -->
+   <div class="container">
+      <div class="support">
+         <div class="support__left">
+            <div class="support__icon"><i class="fa fa-plane " aria-hidden="true"></i></div>
+            <div class="suppurt__content">
+               <h3>FREE SHIPPING</h3>
+               <p>In Order Min $200</p>
+            </div>
+         </div>
+         <div class="support__center">
+            <div class="support__icon support__icon-margin"><i class="fa fa-clock-o " aria-hidden="true"></i></div>
+            <div class="suppurt__content">
+               <h3>30-DAYS RETURNS</h3>
+               <p>Money Back Guarantee</p>
+            </div>
+         </div>
+         <div class="support__rigth">
+            <div class="support__icon support__icon-margin"><i class="fa fa-life-ring" aria-hidden="true"></i></div>
+            <div class="suppurt__content">
+               <h3>24/7 SUPPORT</h3>
+               <p>Lifestyme Support</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<!-- Partition -->
+<div class="container">
+   <div class="partition">
+      <div class="partition__line"></div>
+      <h3 class="partition__title">Hand Picked</h3>
+      <div class="partition__line"></div>
+   </div>
+</div>
+
+<!-- Featured -->
+
+<div class="container">
+   <div class="featured">
+
+      <div class="featured__item featured__item-1">
+         <img src="img/featured/1.jpg" alt="clothes">
+         <div class="featured__item-inner">
+            <a href="#" class="btn slider__btn-featured">Shop now</a>
+         </div>
+      </div>
+
+      <div class="featured__item featured__item-2">
+         <img src="img/featured/2.jpg" alt="clothes">
+         <div class="featured__item-inner">
+            <a href="#" class="btn slider__btn-featured">Shop now</a>
+         </div>
+      </div>
+
+      <div class="featured__item featured__item-3">
+         <img src="img/featured/center.jpg" alt="clothes">
+         <div class="featured__item-inner">
+            <a href="#" class="btn slider__btn-featured">Shop now</a>
+         </div>
+      </div>
+
+      <div class="featured__item featured__item-4">
+         <img src="img/featured/3.jpg" alt="clothes">
+         <div class="featured__item-inner">
+            <a href="#" class="btn slider__btn-featured">Shop now</a>
+         </div>
+      </div>
+
+      <div class="featured__item featured__item-5">
+         <img src="img/featured/4.jpg" alt="">
+         <div class="featured__item-inner">
+            <a href="#" class="btn slider__btn-featured">Shop now</a>
+         </div>
+      </div>
+
+   </div>
+</div>
+
+<!-- Partition -->
+<div class="container">
+   <div class="partition">
+      <div class="partition__line"></div>
+      <h3 class="partition__title">Summer Collection</h3>
+      <div class="partition__line"></div>
+   </div>
+</div>
+
+<!-- Recent -->
+
+<div class="container">
+   <div class="recent">
+      <!-- recent__item1 -->
+      <div class="recent__item">
+         <img src="img/recent/1.jpg" alt="clothes">
+         <div class="recent__item-discount"><p>20<span>%</span></p></div>
+         <div class="recent__item-blackout"></div>
+         <a href="#" class="btn recent__item-btn">+ Add to cart</a>
+      </div>
+      <!-- recent__item2 -->
+      <div class="recent__item">
+         <img src="img/recent/2.jpg" alt="clothes">
+         <div class="recent__item-discount" style="display: none;"><p>40<span>%</span></p></div>
+         <div class="recent__item-blackout"></div>
+         <a href="#" class="btn recent__item-btn">+ Add to cart</a>
+      </div>
+      <!-- recent__item3 -->
+      <div class="recent__item">
+         <img src="img/recent/3.jpg" alt="clothes">
+         <div class="recent__item-discount" style="display: none;"><p>40<span>%</span></p></div>
+         <div class="recent__item-blackout"></div>
+         <a href="#" class="btn recent__item-btn">+ Add to cart</a>
+      </div>
+      <!-- recent__item4 -->
+      <div class="recent__item">
+         <img src="img/recent/4.jpg" alt="clothes">
+         <div class="recent__item-discount"><p>40<span>%</span></p></div>
+         <div class="recent__item-blackout"></div>
+         <a href="#" class="btn recent__item-btn">+ Add to cart</a>
+      </div>
+      <!-- recent__item5 -->
+      <div class="recent__item">
+         <img src="img/recent/5.jpg" alt="clothes">
+         <div class="recent__item-discount"><p>60<span>%</span></p></div>
+         <div class="recent__item-blackout"></div>
+         <a href="#" class="btn recent__item-btn">+ Add to cart</a>
+      </div>
+      <!-- recent__item6 -->
+      <div class="recent__item">
+         <img src="img/recent/6.jpg" alt="clothes">
+         <div class="recent__item-discount"><p>10<span>%</span></p></div>
+         <div class="recent__item-blackout"></div>
+         <a href="#" class="btn recent__item-btn">+ Add to cart</a>
+      </div>
+      <!-- recent__item7 -->
+      <div class="recent__item">
+         <img src="img/recent/7.jpg" alt="clothes">
+         <div class="recent__item-discount" style="display: none;"><p>40<span>%</span></p></div>
+         <div class="recent__item-blackout"></div>
+         <a href="#" class="btn recent__item-btn">+ Add to cart</a>
+      </div>
+      <!-- recent__item8 -->
+      <div class="recent__item">
+         <img src="img/recent/8.jpg" alt="clothes">
+         <div class="recent__item-discount"><p>40<span>%</span></p></div>
+         <div class="recent__item-blackout"></div>
+         <a href="#" class="btn recent__item-btn">+ Add to cart</a>
+      </div>
+   </div>
+</div>
+
+<!-- Partition -->
+<div class="container">
+   <div class="partition">
+      <div class="partition__line"></div>
+      <h3 class="partition__title">Our Brand</h3>
+      <div class="partition__line"></div>
+   </div>
+</div>
+
+<!-- Our Brand -->
+<div class="container">
+   <div class="brand">
+      <div><img src="img/OurBrand/1.png" alt="brand"></div>
+      <div><img src="img/OurBrand/2.png" alt="brand"></div>
+      <div><img src="img/OurBrand/3.png" alt="brand"></div>
+      <div><img src="img/OurBrand/4.png" alt="brand"></div>
+      <div><img src="img/OurBrand/5.png" alt="brand"></div>
+      <div><img src="img/OurBrand/6.png" alt="brand"></div>
+   </div>
+</div>
+
+<!-- Partition -->
+<div class="container">
+   <div class="partition">
+      <div class="partition__line"></div>
+      <h3 class="partition__title">Customers Says</h3>
+      <div class="partition__line"></div>
+   </div>
+</div>
+
+<!-- Testimonial -->
+<div class="testimonal">
+   <div class="container">
+      <div class="testimonial__inner">
+
+         <div class="testimonial__item">
+            <img src="img/testimonial/Layer-12.png" alt="img" class="testimonial__item-img1">
+            <div class="testimonial__item-content">
+               <i>Sed ut perspiciatis<br />
+               unde omnis iste natus error sit<br />
+               voluptatem accusantium doloremque</i>
+               <h4>Sandra Dewi</h4>
+               <p>FASHION STYLISH</p>
+            </div>
+         </div>
+
+         <div class="testimonial__item testimonial__item-2">
+            <div class="testimonial__item-content testimonial__item-content-rigth">
+               <i>Sed ut perspiciatis<br/>
+               unde omnis iste natus error sit<br/>
+               voluptatem accusantium doloremque</i>
+               <h4>Shaheer Sheikh</h4>
+               <p>designer</p>
+            </div>
+            <img src="img/testimonial/Layer-13.png" alt="img" class="testimonial__item-img2">
+         </div>
+
+      </div>
+   </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+   <div class="container">
+      <div class="footer__top">
+         <div class="footer__top-item">
+            <h5 class="footer-title">Shop</h5>
+            <ul>
+               <li><a href="#">New In</a></li>
+               <li><a href="#">Women</a></li>
+               <li><a href="#">Men</a></li>
+               <li><a href="#">Shoes</a></li>
+               <li><a href="#">Bags & Accessories</a></li>
+               <li><a href="#">Top Brands</a></li>
+               <li><a href="#">Sale & Special Offers</a></li>
+               <li><a href="#">Lookbook</a></li>
+            </ul>
+         </div>
+         <div class="footer__top-item">
+            <h5 class="footer-title">information</h5>
+            <ul>
+               <li><a href="#">About us</a></li>
+               <li><a href="#">Customer Service</a></li>
+               <li><a href="#">New Collection</a></li>
+               <li><a href="#">Best Sellers</a></li>
+               <li><a href="#">Manufacturers</a></li>
+               <li><a href="#">Privacy policy</a></li>
+               <li><a href="#">Terms & condition</a></li>
+               <li><a href="#">Blog</a></li>
+            </ul>
+         </div>
+         <div class="footer__top-item">
+            <h5 class="footer-title">Customer service</h5>
+            <ul>
+               <li><a href="#">Search Terms</a></li>
+               <li><a href="#">Advanced Search</a></li>
+               <li><a href="#">Orders and Returns</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">RSS</a></li>
+               <li><a href="#">Help & FAQs</a></li>
+               <li><a href="#">Consultant</a></li>
+               <li><a href="#">Store Locations</a></li>
+            </ul>
+         </div>
+         <div class="footer__top-social">
+            <h5 class="footer-title">STAY CONNECTED</h5>
+            <div class="footer__top-social-ico">
+                  <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                  <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                  <a href="#" class="fa fa-pinterest" aria-hidden="true"></a>
+                  <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+                  <a href="#" class="fa fa-rss" aria-hidden="true"></a>
+            </div>
+            <div class="footer__top-social-form">
+               <form action="">
+                  <label for="email" class="footer-title">SUBSCRIBE <i>&nbsp;in&nbsp;</i> OUR NEWS LETTER</label>
+                  <div class="input-wrapper">
+                     <input type="email" id="email" name="email" placeholder="Enter Your Email Address">
+                     <button type="submit" >Subscribe</button>
+                  </div>
+
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer__bottom">
+         <div class="footer__bottom-line"></div>
+         <p class="footer__bottom-text">© 2015 Shopia Fashion Store Shopify. 
+            All Rights Reserved. Ecommerce Software by Shopify.
+            Designed by MoccaLabs.com
+         </p>
+         <div class="footer__bottom-card">
+            <img src="img/Footer/Visa.png" alt="card">
+            <img src="img/Footer/Mastercard.png" alt="card">
+            <img src="img/Footer/American-Express.png" alt="card">
+            <img src="img/Footer/Discover.png" alt="card">
+         </div>
+      </div>
+      
+   </div>
+</footer>
+<div class="footer__end"></div>
+
+
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
